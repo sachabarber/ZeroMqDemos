@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HelloWorldDemoSeparateProcesses;
 
-namespace HelloWorldDemo
+namespace HelloWorldDemoSeparateThreads
 {
     public class Program
     {

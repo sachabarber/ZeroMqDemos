@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NetMQ;
 
-namespace HelloWorldDemoSeparateProcesses
+namespace HelloWorldDemoSeparateThreads
 {
     sealed class Server
     {
