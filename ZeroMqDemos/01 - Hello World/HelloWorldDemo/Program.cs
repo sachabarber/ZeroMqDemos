@@ -26,7 +26,6 @@ namespace HelloWorldDemo
                         server.Send("Hi Back");
 
                         string fromServerMessage = client.ReceiveString();
-
                         Console.WriteLine("From Server: {0}", fromServerMessage);
 
                         Console.ReadLine();

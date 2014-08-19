@@ -7,14 +7,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloWorld", "HelloWorld", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDemo", "01 - Hello World\HelloWorldDemo\HelloWorldDemo.csproj", "{07A4F897-779F-4202-B6CE-CA0700322B32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDemoSeparateProcesses", "01 - Hello World\HelloWorldDemoSeparateProcesses\HelloWorldDemoSeparateProcesses.csproj", "{E2D13207-2063-4111-A747-5A40C15F509A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B6BF2A16-69EC-44CD-B14F-BEEF142A759A}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SeparateProcesses", "SeparateProcesses", "{4CDBBCAF-9918-48EF-89C7-B60DC76BCB4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDemoSeparateThreads", "01 - Hello World\HelloWorldDemoSeparateThreads\HelloWorldDemoSeparateThreads.csproj", "{E2D13207-2063-4111-A747-5A40C15F509A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldSeparateClient", "01 - Hello World\HelloWorldDemoSeparateProcesses\HelloWorldSeparateClient\HelloWorldSeparateClient.csproj", "{605CD9E4-F762-4FDF-95CA-CFD39767C547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldSeparateServer", "01 - Hello World\HelloWorldDemoSeparateProcesses\HelloWorldSeparateServer\HelloWorldSeparateServer.csproj", "{3B421697-642B-4395-BC82-CC241C4D7C07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,12 +36,23 @@ Global
 		{E2D13207-2063-4111-A747-5A40C15F509A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2D13207-2063-4111-A747-5A40C15F509A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2D13207-2063-4111-A747-5A40C15F509A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605CD9E4-F762-4FDF-95CA-CFD39767C547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605CD9E4-F762-4FDF-95CA-CFD39767C547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605CD9E4-F762-4FDF-95CA-CFD39767C547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605CD9E4-F762-4FDF-95CA-CFD39767C547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B421697-642B-4395-BC82-CC241C4D7C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B421697-642B-4395-BC82-CC241C4D7C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B421697-642B-4395-BC82-CC241C4D7C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B421697-642B-4395-BC82-CC241C4D7C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{07A4F897-779F-4202-B6CE-CA0700322B32} = {4F397F1F-0D5D-46CE-9C55-88FBA3134D68}
+		{4CDBBCAF-9918-48EF-89C7-B60DC76BCB4F} = {4F397F1F-0D5D-46CE-9C55-88FBA3134D68}
 		{E2D13207-2063-4111-A747-5A40C15F509A} = {4F397F1F-0D5D-46CE-9C55-88FBA3134D68}
+		{605CD9E4-F762-4FDF-95CA-CFD39767C547} = {4CDBBCAF-9918-48EF-89C7-B60DC76BCB4F}
+		{3B421697-642B-4395-BC82-CC241C4D7C07} = {4CDBBCAF-9918-48EF-89C7-B60DC76BCB4F}
 	EndGlobalSection
 EndGlobal
