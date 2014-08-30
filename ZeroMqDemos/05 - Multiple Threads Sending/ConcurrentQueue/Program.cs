@@ -14,7 +14,7 @@ namespace ConcurrentQueueDemo
             //1. Use many threads each writing to ConcurrentQueue
             //2. Extra thread to read from ConcurrentQueue, and this is the one that 
             //   will deal with writing to the server
-            ConcurrentQueue<NetMQMessage> messages = new ConcurrentQueue<NetMQMessage>();
+            ConcurrentQueue<string> messages = new ConcurrentQueue<string>();
             int delay = 3000;
             Poller poller = new Poller();
 
@@ -33,10 +33,7 @@ namespace ConcurrentQueueDemo
                         {
                             while (true)
                             {
-                                var messageToServer = new NetMQMessage();
-                                messageToServer.AppendEmptyFrame();
-                                messageToServer.Append(state.ToString());
-                                messages.Enqueue(messageToServer);
+                                messages.Enqueue(state.ToString());
                                 Thread.Sleep(delay);
                             }
 
@@ -53,10 +50,13 @@ namespace ConcurrentQueueDemo
 
                         while (true)
                         {
-                            NetMQMessage message = null;
-                            if (messages.TryDequeue(out message))
+                            string clientMessage = null;
+                            if (messages.TryDequeue(out clientMessage))
                             {
-                                client.SendMessage(message);
+                                var messageToServer = new NetMQMessage();
+                                messageToServer.AppendEmptyFrame();
+                                messageToServer.Append(clientMessage);
+                                client.SendMessage(messageToServer);
                             }
                         }
 
