@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloWorld", "HelloWorld", "{4F397F1F-0D5D-46CE-9C55-88FBA3134D68}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - HelloWorld", "01 - HelloWorld", "{4F397F1F-0D5D-46CE-9C55-88FBA3134D68}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDemo", "01 - Hello World\HelloWorldDemo\HelloWorldDemo.csproj", "{07A4F897-779F-4202-B6CE-CA0700322B32}"
 EndProject
@@ -21,6 +21,24 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldSeparateClient", "01 - Hello World\HelloWorldDemoSeparateProcesses\HelloWorldSeparateClient\HelloWorldSeparateClient.csproj", "{605CD9E4-F762-4FDF-95CA-CFD39767C547}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldSeparateServer", "01 - Hello World\HelloWorldDemoSeparateProcesses\HelloWorldSeparateServer\HelloWorldSeparateServer.csproj", "{3B421697-642B-4395-BC82-CC241C4D7C07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Options And SendMore", "03 - Options And SendMore", "{6044F461-82ED-4BA5-8EE7-083B5038D436}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMore", "03 - Options And SendMore\SendMore\SendMore.csproj", "{19208188-FE0F-410F-B3AA-7E94B0A8F432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroMqIdentity", "03 - Options And SendMore\ZeroMqIdentity\ZeroMqIdentity.csproj", "{2969F727-8CA7-4B91-AAFB-8C7B1169522A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Poller", "04 - Poller", "{5387BBC3-73EE-4F8D-8AE9-E7942C4C92DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poller", "04 - Poller\Poller\Poller.csproj", "{55D26736-0C44-427B-B242-09A9F6A86DD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Multiple Threads Sending", "05 - Multiple Threads Sending", "{E06ECC97-5E05-4124-BB40-71128A3AEDA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQSchedulerDemo", "05 - Multiple Threads Sending\NetMQScheduler\NetMQSchedulerDemo.csproj", "{3156317F-4137-4633-B5A9-6F6831C414E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManualThreadingDemo", "05 - Multiple Threads Sending\ManualThreading\ManualThreadingDemo.csproj", "{25DB8C34-F089-46CC-8113-AC863F21621C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentQueueDemo", "05 - Multiple Threads Sending\ConcurrentQueue\ConcurrentQueueDemo.csproj", "{BF76BE8D-92E5-43CC-81B2-A4A25B90600D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +62,30 @@ Global
 		{3B421697-642B-4395-BC82-CC241C4D7C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B421697-642B-4395-BC82-CC241C4D7C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B421697-642B-4395-BC82-CC241C4D7C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19208188-FE0F-410F-B3AA-7E94B0A8F432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19208188-FE0F-410F-B3AA-7E94B0A8F432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19208188-FE0F-410F-B3AA-7E94B0A8F432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19208188-FE0F-410F-B3AA-7E94B0A8F432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2969F727-8CA7-4B91-AAFB-8C7B1169522A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2969F727-8CA7-4B91-AAFB-8C7B1169522A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2969F727-8CA7-4B91-AAFB-8C7B1169522A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2969F727-8CA7-4B91-AAFB-8C7B1169522A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D26736-0C44-427B-B242-09A9F6A86DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D26736-0C44-427B-B242-09A9F6A86DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D26736-0C44-427B-B242-09A9F6A86DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D26736-0C44-427B-B242-09A9F6A86DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3156317F-4137-4633-B5A9-6F6831C414E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3156317F-4137-4633-B5A9-6F6831C414E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3156317F-4137-4633-B5A9-6F6831C414E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3156317F-4137-4633-B5A9-6F6831C414E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25DB8C34-F089-46CC-8113-AC863F21621C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DB8C34-F089-46CC-8113-AC863F21621C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DB8C34-F089-46CC-8113-AC863F21621C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DB8C34-F089-46CC-8113-AC863F21621C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF76BE8D-92E5-43CC-81B2-A4A25B90600D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF76BE8D-92E5-43CC-81B2-A4A25B90600D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF76BE8D-92E5-43CC-81B2-A4A25B90600D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF76BE8D-92E5-43CC-81B2-A4A25B90600D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +96,11 @@ Global
 		{E2D13207-2063-4111-A747-5A40C15F509A} = {4F397F1F-0D5D-46CE-9C55-88FBA3134D68}
 		{605CD9E4-F762-4FDF-95CA-CFD39767C547} = {4CDBBCAF-9918-48EF-89C7-B60DC76BCB4F}
 		{3B421697-642B-4395-BC82-CC241C4D7C07} = {4CDBBCAF-9918-48EF-89C7-B60DC76BCB4F}
+		{19208188-FE0F-410F-B3AA-7E94B0A8F432} = {6044F461-82ED-4BA5-8EE7-083B5038D436}
+		{2969F727-8CA7-4B91-AAFB-8C7B1169522A} = {6044F461-82ED-4BA5-8EE7-083B5038D436}
+		{55D26736-0C44-427B-B242-09A9F6A86DD9} = {5387BBC3-73EE-4F8D-8AE9-E7942C4C92DF}
+		{3156317F-4137-4633-B5A9-6F6831C414E8} = {E06ECC97-5E05-4124-BB40-71128A3AEDA3}
+		{25DB8C34-F089-46CC-8113-AC863F21621C} = {E06ECC97-5E05-4124-BB40-71128A3AEDA3}
+		{BF76BE8D-92E5-43CC-81B2-A4A25B90600D} = {E06ECC97-5E05-4124-BB40-71128A3AEDA3}
 	EndGlobalSection
 EndGlobal

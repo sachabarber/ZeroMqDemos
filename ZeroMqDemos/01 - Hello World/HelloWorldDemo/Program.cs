@@ -1,5 +1,6 @@
 ﻿using System;
 using NetMQ;
+using NetMQ.Sockets;
 
 namespace HelloWorldDemo
 {
